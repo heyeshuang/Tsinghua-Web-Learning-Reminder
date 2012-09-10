@@ -1,0 +1,3 @@
+cron:
+- url: /refresh/learn
+  schedule: every 1 hours synchronized

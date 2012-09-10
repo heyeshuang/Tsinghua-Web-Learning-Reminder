@@ -1,0 +1,15 @@
+application: amailformyself
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /
+  script: main.py
+
+- url: /refresh/learn
+  script: keepalive.py
+  login: admin
+
+- url: /.*
+  script: main.py
